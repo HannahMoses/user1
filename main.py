@@ -30,7 +30,7 @@ class MainHandler(webapp2.RequestHandler):
 
         header = "<h2 style='background-color:rgb(0,180,200);color:white;text-align:center'>USER SIGN-UP</h2>"
         body = "<body style='background-color:rgb(0,180,200)'>Please note that, the first three fields ar required.<br><br></body>"
-        submit="<input type='submit'/>"
+        submit="<input type='submit' value = 'Submit Query'/>"
         form= ("<form>"+
 
         textarea1_label+textarea1+"<br><br>"+
