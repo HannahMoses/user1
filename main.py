@@ -25,8 +25,8 @@ class MainHandler(webapp2.RequestHandler):
         textarea4 = "<input type ='text' name='email'/>"
 
 
-        message = "Other textareas  will work soon !"
-        textarea = "<textarea type='number'>"+message+"</textarea>"
+        message = "I need to validate input & display warnings !"
+        textarea = "<textarea type='text' style='display:inline block;width:350px'>"+message+"</textarea>"
 
         header = "<h2 style='background-color:rgb(0,180,200);color:white;text-align:center'>USER SIGN-UP</h2>"
         body = "<body style='background-color:rgb(0,180,200)'>Please note that, the first three fields ar required.<br><br></body>"
@@ -39,7 +39,7 @@ class MainHandler(webapp2.RequestHandler):
         textarea4_label+textarea4+"<br><br>"+
         textarea+"<br><br>"+submit+
         "</form>")
-        self.response.out.write(header +body+form)
+        self.response.out.write(header+body+form)
 
 app = webapp2.WSGIApplication([
     ('/',MainHandler)
